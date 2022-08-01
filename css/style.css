@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #080808;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #9c9c9c;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border-radius: 0px 0px 8px 8px;
+  background-color: #1b1b1b;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item {
+  font-size: 13px;
+  line-height: 18px;
+  padding-right: 70px;
+}
+
+.menu__link {
+  padding: 21px 0 31px;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  background-color: rgba(245, 185, 5, 0.355);
+  transition: all 0.3s;
+  padding: 0;
+}
+
+.menu__social {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.menu__social-in {
+  padding: 24px 0 32px;
+  padding-right: 25px;
+  margin-left: 25px;
+}
+
+.menu__social-be,
+.menu__social-twitter {
+  padding: 27px 0 30px;
+  padding-right: 25px;
+}
+
+.info {
+  margin-bottom: 95px;
+}
+
+.info__inner {
+  display: flex;
+}
+
+.info__column {
+  flex-basis: 538px;
+}
+
+.info__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 52px;
+  color: #ffffff;
+  margin: 131px 0 0;
+  padding: 10px 0;
+}
+
+.info__text {
+  max-width: 492px;
+  margin: 10px 0 30px 0;
+  line-height: 24px;
+}
+
+.info__btn {
+  background-color: #62ba1b;
+  padding: 21px 64px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: inline-block;
+  transition: all 0.3s;
+  box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+  border-radius: 4px;
+}
+
+.info__btn:hover {
+  background-color: #3f8e00;
+}
+
+.info__portrait {
+  margin: 80px 0 0 32px;
+}
+
+.info__portrait-img {
+  border-radius: 50%;
+}
+
+.title {
+  line-height: 18px;
+}
+
+.footer__inner {
+  display: flex;
+}
+
+.footer__link {
+  margin-right: 30px;
+  border: 1px solid #1b1b1b;
+  border-radius: 6px;
+  min-width: 160px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1130px) {
+  .header__inner {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 940px) {
+  .footer__link {
+    min-width: 0;
+  }
+  .info__portrait-img {
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 788px) {
+  .menu {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .menu__social {
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 716px) {
+  .info__btn {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 643px) {
+  .info {
+    margin-bottom: 0;
+  }
+  .info__btn {
+    padding: 10px 25px;
+  }
+  .header__inner {
+    padding: 0;
+  }
+  .menu__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 615px) {
+  .menu__item {
+    font-size: 10px;
+    line-height: 0px;
+    padding-right: 15px;
+  }
+  .menu__social {
+    padding-top: 0px;
+  }
+  .info__portrait-img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 584px) {
+  .menu__social-in,
+  .menu__social-be,
+  .menu__social-twitter {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 584px) {
+  .footer__inner {
+    display: block;
+  }
+}
+
+@media (max-width: 498px) {
+  .info__name {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .menu__social {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__text {
+    max-width: 100%;
+    line-height: 13px;
+    margin: 5px;
+  }
+  .title {
+    line-height: 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .menu__social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  .menu__social-be {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 409px) {
+  .info {
+    margin: 0;
+  }
+  .menu__item {
+    font-size: 8px;
+  }
+  .header__inner {
+    padding: 0;
+  }
+}
+
+@media (max-width: 327px) {
+  .menu__item {
+    font-size: 7px;
+  }
+}
